@@ -17,7 +17,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace _02_WPF_Lova
+namespace _02_WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -55,7 +55,9 @@ namespace _02_WPF_Lova
             {
                 FirstName = tb_FirstName.Text,
                 LastName = tb_LastName.Text,
-                Email = tb_Email.Text
+                Email = tb_Email.Text,
+                Phone = tb_Phone.Text,
+                Address = tb_Address.Text
             });
 
             file.Save(JsonConvert.SerializeObject(employees));
@@ -67,6 +69,13 @@ namespace _02_WPF_Lova
             tb_FirstName.Text = "";
             tb_LastName.Text = "";
             tb_Email.Text = "";
+            tb_Phone.Text = "";
+            tb_Address.Text = "";
+
         }
+       
+
+
     }
+
 }
